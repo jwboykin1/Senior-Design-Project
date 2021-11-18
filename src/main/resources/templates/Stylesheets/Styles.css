@@ -13,51 +13,271 @@ h2
 p
 {
   font-size: 18px;
+  
 }
 
 body
 {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     color: #000000;
     font-family: sans-serif, verdana;
     list-style-type: square;
+    
 }
 
-.sidenav
+.topnav 
 {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 0;
+  top: 0;
   left: 0;
-  background-color: #65C7FE; /* Sky Blue*/
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #5680E9;
+  overflow-x: hidden;
 }
 
-/* The navigation menu links */
-.sidenav a 
+
+/*.topnav:hover{
+  width: 100%;
+  
+}*/
+/* Fixed sidenav, full height */
+
+
+/* Style the sidenav links and the dropdown button */
+.topnav a, .dropdown-btn 
 {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  color: #FFFFFF;
   display: block;
-  transition: 0.3s;
+  border: none;
+  background: none;
+  width:50%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover 
+.topnav a{
+  display: inline;
+}
+
+/* On mouse-over */
+.topnav a:hover, .dropdown-btn:hover 
 {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn 
+/* Main content */
+.main 
 {
+  font-size: 20px; /* Increased text to enable scrolling */
+  margin: auto 10% auto 10%;
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active 
+{
+  background-color: gray;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container 
+{
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down 
+{
+  float: right;
+  padding-right: 8px;
+}
+
+#BackToTop 
+{
+  display: none; /* This will be changed to none once other elements are corrected */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border:none;
+  outline:none;
+  background-color:white;
+  color:white;
+  cursor:pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#BackToTop:hover 
+{
+  background-color: #555;
+}
+
+
+/* Style the links inside the sidenav */
+#mySidenav a 
+{
+  position: absolute; /* Position them relative to the browser window */
+  left: -150px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 5px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover 
+{
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Home 
+{
+  top: 20px;
+  background-color: #5680E9;
+}
+
+#LessonPlans 
+{
+  top: 80px;
+  background-color: #24C2EF; /* Blue */
+}
+
+#KnowledgeBase 
+{
+  top: 140px;
+  background-color: #8860D0; /* Red */
+}
+
+#mySidenav #KnowledgeBase{
+  width: 200px;
+  left: -200px;
+}
+
+
+#mySidenav #KnowledgeBase:hover
+{
+  left: 0;
+}
+#Contact 
+{
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+
+
+.footer{
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  bottom: 0;
+}
+
+/* Knowledge Base */
+.vertical-menu
+{
+width: 300px;
+flex-direction: column;
+padding-bottom: 25px;
+position: relative;
+margin: auto;
+height: 400px;
+text-align: center;
+}
+
+#ComputerBasics
+{
+  color: #f1f1f1;
+  position: absolute;
+  top: 40px;
+  background-color: #5680E9;
+}
+
+#WindowBasics
+{
+  color: #f1f1f1;
+  top: 100px;
+  position: absolute;
+  background-color: #24C2EF; /* Blue */
+}
+
+#Hardware
+{
+  color: #f1f1f1;
+  position: absolute;
+  top: 160px;
+  background-color: #8860D0; /* Red */
+}
+
+#Software
+{
+  color: #f1f1f1;
+  position: absolute;
+  top: 220px;
+}
+
+#Internet
+{
+  color: #f1f1f1;
+  position: absolute;
+  top:280px;
+}
+
+#OperatingSystems
+{
+  color: #f1f1f1;
+  position: absolute;
+  top: 340px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+  float: right;
+  clear: both;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+
+.dedicated p{
+  
+  width: 50%;
+  clear: both;
+  display: inline-block;
 }

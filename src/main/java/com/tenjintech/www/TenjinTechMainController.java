@@ -15,4 +15,18 @@ public class TenjinTechMainController {
     public String Index(){
         return "index";
     }
+    
+    
+    @RequestMapping(value = "Lesson Plans", method = RequestMethod.GET)
+    public String index(Model model) {
+        model.addAttribute("text", "Our Lesson Plans");
+        return "Lesson Plans";
+    }
+    
+    
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(Model model) {
+        model.addAttribute("text", "Welcome to FleetManager");
+        return "index";
+    }
 }
