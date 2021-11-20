@@ -10,6 +10,7 @@ import org.apache.guacamole.protocol.ConfiguredGuacamoleSocket;
 import org.apache.guacamole.protocol.GuacamoleConfiguration;
 import org.apache.guacamole.servlet.GuacamoleHTTPTunnelServlet;
 
+@RestController
 public class TutorialGuacamoleTunnelServlet
     extends GuacamoleHTTPTunnelServlet {
 

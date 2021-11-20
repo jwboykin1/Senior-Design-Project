@@ -24,9 +24,10 @@ public class TenjinTechMainController {
     }
     
     
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Model model) {
-        model.addAttribute("text", "Welcome to FleetManager");
-        return "index";
-    }
+@Override
+@RequestMapping(value = "Tunnel", method = { RequestMethod.POST, RequestMethod.GET })
+protected void handleTunnelRequest(HttpServletRequest request,
+        HttpServletResponse response) throws ServletException {
+    super.handleTunnelRequest(request, response);
+}
 }
