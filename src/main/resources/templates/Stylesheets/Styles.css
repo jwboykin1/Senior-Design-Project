@@ -181,6 +181,7 @@ body
 }
 
 
+
 .footer{
   position: absolute;
   bottom: 0;
@@ -236,7 +237,7 @@ text-align: center;
   top:280px;
 }
 
-#OperatingSystems
+#CourseWork
 {
   color: #f1f1f1;
   position: absolute;
@@ -296,8 +297,8 @@ text-align: center;
 	}
 	/* set a style for all buttons*/
 	button {
-		background-color: green;
-		color: white;
+		background-color: #13B2F7;
+		color: #FFFFFF;
 		padding: 14px 20px;
 		margin: 8px 0;
 		cursor: pointer;
@@ -322,8 +323,7 @@ text-align: center;
 	
 	.modal {
 		display: none;
-		position: fixed;
-		z-index: 1;
+		position: relative;
 		left: 0;
 		top: 0;
 		width: 100%;
