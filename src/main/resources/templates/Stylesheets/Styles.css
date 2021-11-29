@@ -10,6 +10,12 @@ h2
   text-align: center
 }
 
+h3
+{
+   font-size: 25px;
+  text-align: center 
+}
+
 p
 {
   font-size: 18px;
@@ -29,7 +35,7 @@ body
 {
   
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -131,7 +137,7 @@ body
 {
   position: absolute; /* Position them relative to the browser window */
   left: -150px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
+  transition: .3s; /* Add transition on hover */
   padding: 5px; /* 15px padding */
   width: 150px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
@@ -142,25 +148,25 @@ body
 
 #mySidenav a:hover 
 {
-  left: 0; /* On mouse-over, make the elements appear as they should */
+  left: 0%; /* On mouse-over, make the elements appear as they should */
 }
 
 /* The about link: 20px from the top with a green background */
 #Home 
 {
-  top: 20px;
+  top: 70px;
   background-color: #5680E9;
 }
 
 #LessonPlans 
 {
-  top: 80px;
+  top: 130px;
   background-color: #24C2EF; /* Blue */
 }
 
 #KnowledgeBase 
 {
-  top: 140px;
+  top: 190px;
   background-color: #8860D0; /* Red */
 }
 
@@ -176,7 +182,7 @@ body
 }
 #Contact 
 {
-  top: 200px;
+  top: 250px;
   background-color: #555 /* Light Black */
 }
 
@@ -192,11 +198,28 @@ body
 {
 width: 300px;
 flex-direction: column;
-padding-bottom: 25px;
-position: relative;
-margin: auto;
-height: 400px;
 text-align: center;
+margin: auto;
+}
+
+.vertical-menu a {
+  background-color: #5680E9;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 #ComputerBasics
@@ -371,3 +394,24 @@ text-align: center;
 			width: 100%;
 		}
 	}
+	
+	/* Lesson Plan */
+	ul#menu li
+{
+    display:block;
+    list-style: none;
+    background: #358FE9;
+    border: 1px solid #b2b2b2;
+    padding: 0;
+    margin-top: 5px;
+}
+
+ul#menu li a
+{
+
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    padding-right:.5em;
+    color: #000000;
+}
