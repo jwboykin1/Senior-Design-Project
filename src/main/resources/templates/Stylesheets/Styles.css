@@ -24,7 +24,7 @@ p
 
 body
 {
-    background-color: #FFF;
+    background-color:#C1C8E4;
     color: #000000;
     font-family: sans-serif, verdana;
     list-style-type: square;
@@ -71,6 +71,11 @@ body
 
 .topnav a{
   display: inline;
+  text-align: center;
+  padding-top: 10px;
+  border-left-style: solid;
+  border-color: black;
+  border-width: 2px
 }
 
 /* On mouse-over */
@@ -83,9 +88,12 @@ body
 .main 
 {
   font-size: 20px; /* Increased text to enable scrolling */
-  margin: auto 10% auto 10%;
+  margin: 50px 15% auto 15%;
   padding: 0px 10px;
+  background:white;
+  border-radius: 20px;
 }
+
 
 /* Add an active class to the active dropdown button */
 .active 
@@ -183,14 +191,7 @@ body
 #Contact 
 {
   top: 250px;
-  background-color: #555 /* Light Black */
-}
-
-
-
-.footer{
-  position: absolute;
-  bottom: 0;
+  background-color: darkgray /* Purple Gray*/
 }
 
 /* Knowledge Base */
@@ -207,8 +208,11 @@ margin: auto;
   color: black;
   display: block;
   padding: 12px;
+  margin: 5px;
   text-decoration: none;
   text-align: center;
+  border-radius: 15px;
+  border-style: solid;
 }
 
 
@@ -263,7 +267,7 @@ margin: auto;
 #CourseWork
 {
   color: #f1f1f1;
-  position: absolute;
+  position: fixed;
   top: 340px;
 }
 
@@ -323,10 +327,11 @@ margin: auto;
 		background-color: #13B2F7;
 		color: #FFFFFF;
 		padding: 14px 20px;
-		margin: 8px 0;
+    margin: 8px 0;
 		cursor: pointer;
-		width: 100%;
+		text-align: center;
 	}
+
 	/*set styles for the cancel button*/
 	.cancelbtn {
 		padding: 14px 20px;
@@ -336,7 +341,9 @@ margin: auto;
 	.cancelbtn,
 	.signupbtn {
 		float: left;
-		width: 50%
+		width: 50%;
+			min-width: 95px;
+	
 	}
 	/*add padding to container elements*/
 	.container {
@@ -346,15 +353,14 @@ margin: auto;
 	
 	.modal {
 		display: none;
-		position: relative;
+		position: fixed;
 		left: 0;
-		top: 0;
+		top: 20px;
 		width: 100%;
-		height: 100%;
+		height: 200%;
 		overflow: auto;
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.4);
-		padding-top: 60px;
 	}
 	/*define the modal-content background*/
 	
@@ -392,26 +398,95 @@ margin: auto;
 		.cancelbtn,
 		.signupbtn {
 			width: 100%;
+			
 		}
 	}
 	
-	/* Lesson Plan */
-	ul#menu li
+	/* Courses */
+	#menu li
 {
     display:block;
     list-style: none;
     background: #358FE9;
-    border: 1px solid #b2b2b2;
+    border: 2px solid ;
     padding: 0;
-    margin-top: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
 }
 
-ul#menu li a
+  #menu li a
 {
-
     font-weight: bold;
     text-decoration: none;
     line-height: 2.8em;
-    padding-right:.5em;
     color: #000000;
+}
+
+.courseHeader{
+  text-align: left;
+}
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
