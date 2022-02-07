@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tenjin Tech</title>
+    <link href="Stylesheets/Styles.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <img src="logo.jpg" alt="Tenjin Tech" class="center">
+    <div div id="myTopnav" class="topnav">
+      <a href="index.html">Home</a>
+      <a href="Lesson Plans.html">Lesson Plans</a>
+      <a href="#Knowledge Base.html">Knowledge Base</a>
+    </div>
+    </div>
+    
+       <div id="mySidenav" class="sidenav">
+      <a href="index.html" id="Home">Home</a>
+      <a href="Lesson Plans.html" id="LessonPlans">Lesson Plans</a>
+      <a href="#" id="KnowledgeBase">Knowledge Base</a>
+      <a href="#" id="Contact">Contact</a>
+    </div>
+    
+    <h1>Courses</h1>
+   
+
+    <div class="dropdownSec">
+      <button onclick="secDrop()" class="dropbtnSec">Phishing</button>
+      <div id="myDropdownSec" class="dropdown-content-sec">
+        <a href="UPS2.html" target="_blank">Easy</a>
+        <a href="#medium">Medium</a>
+        <a href="#hard">Hard</a>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function secDrop() {
+        document.getElementById("myDropdownSec").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtnSec')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content-sec");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  
+  </body>
+    

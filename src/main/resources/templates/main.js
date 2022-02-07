@@ -15,3 +15,20 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+function secDrop(){
+    document.getElementById("myDropdownSec").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches("dropbtnSec")) {
+        var dropdownSec = document.getElementsByClassName("dropdown-content-Sec");
+        var x;
+        for (x = 0; x < dropdownSec.length; x++){
+            var openDropdownSec = dropdownSec[x];
+            if (openDropdownSec.classList.contains("show")){
+                openDropdownSec.classList.remove("show");
+            }
+        }
+    }
+}
