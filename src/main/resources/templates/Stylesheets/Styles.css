@@ -275,7 +275,13 @@ margin: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 20%;
+}
+
+.CentralHeader{
+  
+  text-align: center;
+  padding-top:3%
 }
 
 /* Two image containers (use 25% for four, and 50% for two, etc) */
@@ -493,11 +499,12 @@ flex-direction: column;
 
 /* This starts the section for Security Dropdown */
 
-.dropbtnSec {
-  width: 300px;
+
+.dropbtnSec{
+  width: 500px;
   flex-direction: column;
   text-align: center;
-  margin: 10px;
+  margin: auto;
   background-color: #5680E9;
   color: black;
   display: block;
@@ -505,7 +512,7 @@ flex-direction: column;
   text-decoration: none;
   border-radius: 15px;
   border-style: solid;
-}
+} 
 
 .dropbtnSec:hover, .dropbtnSec:focus {
   background-color: #0aa9c5;
