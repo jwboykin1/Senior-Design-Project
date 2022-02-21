@@ -275,7 +275,13 @@ margin: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 20%;
+}
+
+.CentralHeader{
+  
+  text-align: center;
+  padding-top:3%
 }
 
 /* Two image containers (use 25% for four, and 50% for two, etc) */
@@ -490,3 +496,79 @@ flex-direction: column;
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+
+/* This starts the section for Security Dropdown */
+
+
+.dropbtnSec{
+  width: 500px;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-color: #5680E9;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 15px;
+  border-style: solid;
+} 
+
+.dropbtnSec:hover, .dropbtnSec:focus {
+  background-color: #0aa9c5;
+}
+
+.dropdownSec {
+  position: center;
+  display: block;
+  padding: auto;
+}
+
+.dropdown-content-sec {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  overflow: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1;
+}
+
+.dropdown-content-sec a  {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-sec a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdownSec
+{
+width: 300px;
+flex-direction: column;
+text-align: center;
+margin: auto;
+}
+
+.dropdownSec a {
+  background-color: #5680E9;
+  color: black;
+  display: block;
+  padding: 12px;
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+.dropdownSec a:hover {
+  background-color: #ccc;
+}
+
+/* This ends the section for Security Dropdown */
