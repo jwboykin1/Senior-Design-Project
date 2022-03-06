@@ -2,6 +2,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="Stylesheets/SecurityStyles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +40,75 @@
 				<br> <strong>The Zoom Team </strong></p>
 		</div>
 	</div>
+	      <!-- Code for faqs --->
+<h1 class="faq-heading" style="text-align: center; padding-top: 2%;">Answers: Select the Portion of the E-mail you Would Like to Check!</h1>
+<section class="faq-container">
+<div class="faq-one">
+  
+<!-- faq question -->
+<h1 class="faq-page">Answer for Top Portion</h1>
+
+ <!-- faq answer -->
+<div class="faq-body">
+<img src="SecurityImg/Zoom-Top.jpg"> </img>
+<p>Based on the other difficulties you would think something is wrong with the logo <br> but this is actually a legitimate logo taken from Zoom! This is one of the reasons <br> why you have to stay vigilant when looking at emails.</p>
+  </div>
+      </div>
+
+<hr class="hr-line">
+<div class="faq-two">
+<!-- faq question -->
+<h1 class="faq-page">Answer for User Portion</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+<img src="SecurityImg/Zoom-User.jpg"> </img>
+<p>The email begins with a generic "Dear User" instead of something like "Dear John". <br> Legitimate companies will have access to your account and would rarely, if ever send something generic like this</p>
+</div>
+  </div>
+  
+<hr class="hr-line">
+<div class="faq-three">
+<!-- faq question -->
+<h1 class="faq-page">Answer for Middle Portion</h1>
+<!-- faq answer -->
+<div class="faq-body">
+	<img src="SecurityImg/Zoom-Middle.jpg"> </img>
+	<p>The first portion of the email talks about how Zoom has created <br> a new automatic update feature, to the unsuspecting eye this could seem legitimate, <br> however Zoom would have ways to put this directly in the client application.</p>
+	<p>This section tries to bring credibility to the update showing how a user would actually change <br> their settings.  This is a technique used by scammers and phishers to get users to trust them.</p>
+</div>
+   </div>
+
+<hr class="hr-line">
+<div class="faq-four">
+<!-- faq question -->
+<h1 class="faq-page">Answer for Bottom Portion</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+	<img src="SecurityImg/Zoom-Bottom.jpg"> </img>
+	<p>The screenshot offered by the "Zoom Team" is not a high quality one, if they were truly trying <br> to get users to follow along with their steps it would have been made with more professionalism.</p>
+</div>
+   </div>
+
+   <script>
+    var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
 </body>
 
 </html>

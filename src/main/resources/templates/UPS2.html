@@ -1,3 +1,7 @@
+<head>
+    <meta charset="UTF-8">
+    <link href="Stylesheets/SecurityStyles.css" rel="stylesheet">
+</head>
 <h1 style ="text-align: center;">Can you find all the problems with this email?</h1>
 <div>
 <table border="0" cellspacing="1" cellpadding="1">
@@ -15,3 +19,68 @@
 </table>
 </div>
 
+<!-- Code for faqs --->
+<h1 class="faq-heading" style="text-align: center; padding-top: 2%;">Answers: Select the Portion of the E-mail you Would Like to Check!</h1>
+<section class="faq-container">
+<div class="faq-one">
+  
+<!-- faq question -->
+<h1 class="faq-page">Answer for Top Portion</h1>
+
+ <!-- faq answer -->
+<div class="faq-body">
+<img src="SecurityImg/UPS-Top.jpg"> </img>
+  </div>
+      </div>
+
+<hr class="hr-line">
+<div class="faq-two">
+<!-- faq question -->
+<h1 class="faq-page">How to create an account?</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+<p>To create an account, you will click on the "Create an account" button in the upper right corner of the webpage. The only information that is needed are birthdate, email, full name, username, and password of your choosing. At Tenjin Tech we strive to keep your data as safe as possible and will not share or sell personal information.</p>
+</div>
+  </div>
+  
+<hr class="hr-line">
+<div class="faq-three">
+<!-- faq question -->
+<h1 class="faq-page">How to sign in?</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+<p>To sign into your account, you will click the sign in button in the upper right corner of the webpage; you will need to enter your username and password.</p>
+</div>
+   </div>
+
+<hr class="hr-line">
+<div class="faq-four">
+<!-- faq question -->
+<h1 class="faq-page">What are the minimal tech requirements for the site?</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+<p>The minimal tech requirements for the site are; i3 processor, 4GB of RAM, 128GB of storage, and Windows 8 and up.</p>
+</div>
+   </div>
+
+   <script>
+    var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
