@@ -435,7 +435,8 @@ margin: auto;
 
 .faq-heading{
     border-bottom: #777;
-    padding: 20px 60px;
+    text-align: center;
+    justify-content: center;
 }
 .faq-container{
 display: flex;
@@ -497,8 +498,80 @@ flex-direction: column;
     /* Unicode character for "minus" sign (-) */
 }
 
-/* This starts the section for Security Dropdown */
+/* This starts the section for Security Dropdown - Intro to Phishing */
 
+.dropbtnSec1{
+  width: 500px;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-color: #5680E9;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 15px;
+  border-style: solid;
+} 
+
+.dropbtnSec1:hover, .dropbtnSec1:focus {
+  background-color: #0aa9c5;
+}
+
+.dropdownSec1 {
+  position: center;
+  display: block;
+  padding: auto;
+}
+
+.dropdown-content-sec1 {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  overflow: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1;
+}
+
+.dropdown-content-sec1 a  {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-sec1 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdownSec1
+{
+width: 300px;
+flex-direction: column;
+text-align: center;
+margin: auto;
+}
+
+.dropdownSec1 a {
+  background-color: #5680E9;
+  color: black;
+  display: block;
+  padding: 12px;
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+.dropdownSec1 a:hover {
+  background-color: #ccc;
+}
+
+/* This starts the section for Security Dropdown - Phishing */
 
 .dropbtnSec{
   width: 500px;

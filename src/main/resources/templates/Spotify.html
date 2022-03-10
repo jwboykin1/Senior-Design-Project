@@ -1,6 +1,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="Stylesheets/SecurityStyles.css" rel="stylesheet">
    </head>
    <body>
       <h1 style ="text-align: center;">Can you find all the problems with this email?<br></h1>
@@ -179,5 +180,78 @@
             </tbody>
          </table>
       </div>
+      <!-- Code for faqs --->
+<h1 class="faq-heading" style="text-align: center; padding-top: 2%;">Answers: Select the Portion of the E-mail you Would Like to Check!</h1>
+<section class="faq-container">
+<div class="faq-one">
+  
+<!-- faq question -->
+<h1 class="faq-page">Answer for Top Portion</h1>
+
+ <!-- faq answer -->
+<div class="faq-body">
+<img src="SecurityImg/Spotify-Top.jpg"> </img>
+<p>There are a couple places where this logo just seems off. If you look at the <br> resolution it is much worse than a real logo should be. Also the Copyright <br> is so small it is almost unreadable! A real logo is shown below.</p>
+<img src="SecurityImg/Spotify-Real.png"> </img>
+<p>This is what the actual Spotify Logo looks like and while there are different color palettes <br> you can tell this one is more legitimate from a glance.</p>
+  </div>
+      </div>
+
+<hr class="hr-line">
+<div class="faq-two">
+<!-- faq question -->
+<h1 class="faq-page">Answer for Header Portion</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+<img src="SecurityImg/Spotify-Header.jpg"> </img>
+<p>The email begins with "Importan Spotify Notification!" This seems somewhat legitimate <br> until you think about how broad that is, that could mean a number of different topics <br> pertaining to your account. A legitimate company like Spotify would use a more specific <br> account notice. Something like "An Important Notice Regarding your Premium Status". <br> That would be much more believable than what is provided here.</p>
+</div>
+  </div>
+  
+<hr class="hr-line">
+<div class="faq-three">
+<!-- faq question -->
+<h1 class="faq-page">Answer for Middle Portion</h1>
+<!-- faq answer -->
+<div class="faq-body">
+	<img src="SecurityImg/Spotify-Middle.jpg"> </img>
+	<p>This portion begins with the line that phishers try to use quite often "need to validate some account information" any <br> reputable company will never and I mean never ask you to validate your account credentials! That information is private <br> to yourself and wherever it is stored on the company's database. This should be a dead giveaway of a phishing scam so be <br> sure to remember this! The link also when hovered upon takes you to a Youtube domain.</p>
+	<p>This small section is highlighted because of the fact that it is not bolded or italicized or have a larger font size Many <br> companies use tactics like those mentioned to make their teams stand out more from the email for professionalism. </p>
+</div>
+   </div>
+
+<hr class="hr-line">
+<div class="faq-four">
+<!-- faq question -->
+<h1 class="faq-page">Answer for Bottom Portion</h1>
+
+<!-- faq answer -->
+<div class="faq-body">
+	<img src="SecurityImg/Spotify-Bottom.jpg"> </img>
+	<p>The logo is the same as the one pictured in the top with another unreadable Copyright.</p>
+   <p>Phishing scams often throw in portions like this at the bottom to make it look more legitimate. Do not fall for such traps!</p>
+   <p>The final section shows that this email was sent to a certain user. In a lot of phishing attempts phishers make mistakes at <br> areas like this because they send the phishing email out to so many users. Be sure to take note of this area!</p>
+</div>
+   </div>
+
+   <script>
+    var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
    </body>
 </html>
